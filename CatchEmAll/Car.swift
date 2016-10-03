@@ -7,3 +7,38 @@
 //
 
 import Foundation
+
+class Car : Vehicle {
+    var transmission: Transmission
+    var cylinders: Int
+    var milesPerGallon: Double
+    
+    init(name: String, weight: Double, maxSpeed: Double, transmission: Transmission, cylinders: Int, milesPerGallon: Double) {
+        self.transmission = transmission
+        self.cylinders = cylinders
+        self.milesPerGallon = milesPerGallon
+        super.init(name: name, weight: weight, maxSpeed: maxSpeed)
+    }
+    
+    func drive () {
+        accelerate()
+    }
+    
+    func brake () {
+        decelerate()
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
